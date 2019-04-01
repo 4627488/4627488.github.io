@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[noip-mc 机房联机整合包[光影][forge]]]></title>
-    <url>%2Fposts%2F20492847%2F</url>
-    <content type="text"><![CDATA[##概述 一个我的世界整合包。带光影，带模组。近似纯净。 3.29 v1.3更新 使用 HMCL-3.2.129 封面图一张 我居然蒟蒻到 mc 隐藏物品栏都不会 Mod 列表如图 光影列表如图（可能比较单一） 一些游玩建议1.如果用笔记本的话尽量选低配光影，不然满机房都是你风扇声。jl会发现的。你说你们机房让玩？ 2.台式机请注意录屏软件，录屏软件扔虚拟机里+网络直连你值得拥有。 3.不要颓太长时间，想戒请参考 OIer怎么克服颓的毛病？ -知乎 4.里面几张图是我们玩的。 5.被你们jl发现了别说是我告诉你的。 下载我知道你翻到下面就是为了这里的 1.hmcl生成的整合包（我都不知道咋用） 链接：https://share.weiyun.com/5fVC37q 密码：y7qcqn 2.[推荐] 直接压缩的自带java（体积大了一倍不止） 链接：https://share.weiyun.com/5VSYjzz 密码：4kw6qt 更新日志###v1.3.0 19.3.29 使用 HMCL-3.2.129 并依据hmcl特性加入java64]]></content>
-      <tags>
-        <tag>游戏</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2Fposts%2F4a17b156%2F</url>
     <content type="text"><![CDATA[Welcome to 4627488 ‘s blog! 新博客的文件迁移将会陆续进行。 Welcome to 4627488 ‘s blog! 现在运行的是 4627488‘s blog v0.2.13March,1. 开学更新，好不容易写完了寒假作业于是来更一波 ，重构了NexT主题，以后找个图标。 往期更新 4627488‘s blog v0.1.55加入 live2d 加入评论 4627488‘s blog v0.1.7第一个版本]]></content>
@@ -18,17 +10,25 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[元旦欢乐赛]]></title>
-    <url>%2Fposts%2F117973b2%2F</url>
-    <content type="text"><![CDATA[洛谷的团队比赛，这个帖子是用来做宣传的。 打个广告：HUXKE 基金会(T11357) 比赛链接等出完题才能发链接，立个 flag 我基金会：HUXKE 基金会(T11357) 比赛时间on Jan.10,2019 (暂定) 本出题人表示期末在元旦后，有可能被抓去复习文化课，所以出不完题 比赛地点 当然是你谷啦 题目相关难度剧水，令难度为 f ，则可列不等式 0 &lt; f&lt; fpj 共 3.0*10^0 道 (暂定)]]></content>
+    <title><![CDATA[noip-mc 机房联机整合包[光影][forge]]]></title>
+    <url>%2Fposts%2F20492847%2F</url>
+    <content type="text"><![CDATA[概述一个我的世界整合包。带光影，带模组。近似纯净。 3.29 v1.3更新 使用 HMCL-3.2.129 封面图一张 我居然蒟蒻到 mc 隐藏物品栏都不会 Mod 列表如图 光影列表如图（可能比较单一） 一些游玩建议1.如果用笔记本的话尽量选低配光影，不然满机房都是你风扇声。jl会发现的。你说你们机房让玩？ 2.台式机请注意录屏软件，录屏软件扔虚拟机里+网络直连你值得拥有。 3.不要颓太长时间，想戒请参考 OIer怎么克服颓的毛病？ -知乎 4.里面几张图是我们玩的。 5.被你们jl发现了别说是我告诉你的。 下载我知道你翻到下面就是为了这里的 1.hmcl生成的整合包（我都不知道咋用） 链接：https://share.weiyun.com/5fVC37q 密码：y7qcqn 2.[推荐] 直接压缩的自带java（体积大了一倍不止） 链接：https://share.weiyun.com/5VSYjzz 密码：4kw6qt 更新日志###v1.3.0 19.3.29 使用 HMCL-3.2.129 并依据hmcl特性加入java64]]></content>
       <tags>
-        <tag>原创</tag>
+        <tag>游戏</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[图论0x00：一些名词]]></title>
     <url>%2Fposts%2Ff1464e8%2F</url>
     <content type="text"></content>
+      <tags>
+        <tag>原创</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[元旦欢乐赛]]></title>
+    <url>%2Fposts%2F117973b2%2F</url>
+    <content type="text"><![CDATA[洛谷的团队比赛，这个帖子是用来做宣传的。 打个广告：HUXKE 基金会(T11357) 比赛链接等出完题才能发链接，立个 flag 我基金会：HUXKE 基金会(T11357) 比赛时间on Jan.10,2019 (暂定) 本出题人表示期末在元旦后，有可能被抓去复习文化课，所以出不完题 比赛地点 当然是你谷啦 题目相关难度剧水，令难度为 f ，则可列不等式 0 &lt; f&lt; fpj 共 3.0*10^0 道 (暂定)]]></content>
       <tags>
         <tag>原创</tag>
       </tags>
