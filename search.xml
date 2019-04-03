@@ -18,17 +18,17 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[图论0x00：一些名词]]></title>
-    <url>%2Fposts%2Ff1464e8%2F</url>
-    <content type="text"></content>
+    <title><![CDATA[元旦欢乐赛]]></title>
+    <url>%2Fposts%2F117973b2%2F</url>
+    <content type="text"><![CDATA[洛谷的团队比赛，这个帖子是用来做宣传的。 打个广告：HUXKE 基金会(T11357) 比赛链接等出完题才能发链接，立个 flag 我基金会：HUXKE 基金会(T11357) 比赛时间on Jan.10,2019 (暂定) 本出题人表示期末在元旦后，有可能被抓去复习文化课，所以出不完题 比赛地点 当然是你谷啦 题目相关难度剧水，令难度为 f ，则可列不等式 0 &lt; f&lt; fpj 共 3.0*10^0 道 (暂定)]]></content>
       <tags>
         <tag>原创</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[元旦欢乐赛]]></title>
-    <url>%2Fposts%2F117973b2%2F</url>
-    <content type="text"><![CDATA[洛谷的团队比赛，这个帖子是用来做宣传的。 打个广告：HUXKE 基金会(T11357) 比赛链接等出完题才能发链接，立个 flag 我基金会：HUXKE 基金会(T11357) 比赛时间on Jan.10,2019 (暂定) 本出题人表示期末在元旦后，有可能被抓去复习文化课，所以出不完题 比赛地点 当然是你谷啦 题目相关难度剧水，令难度为 f ，则可列不等式 0 &lt; f&lt; fpj 共 3.0*10^0 道 (暂定)]]></content>
+    <title><![CDATA[图论0x00：一些名词]]></title>
+    <url>%2Fposts%2Ff1464e8%2F</url>
+    <content type="text"></content>
       <tags>
         <tag>原创</tag>
       </tags>
@@ -38,8 +38,8 @@
     <url>%2Fposts%2Fdfb4c6d6%2F</url>
     <content type="text"><![CDATA[一个纯 C++ 编译的文字游戏，作者 Cola，现已更新到 v5.1。 Download : Cola ‘s 猜数 v5.1 公告 2018/11/11 11:29Cola’s 猜数将在一段时间内停止更新，若有特殊情况需要重新下载最新版本，请点击链接网页链接以下载。 游戏注意事项请不要随意篡改 “data.txt” 里的数据若不是第一次游戏，请不要删除旧版游戏中的 “data.txt” 文件，请用该文件替换新版游戏压缩包里的“data.txt”文件。 文件信息 文件: guessnumber_v5.1.zip 大小: 467153 字节 修改时间: 2018年11月11日, 17:29:18 MD5: 58832568AB2B493AF8565126B7B4DCB5 SHA1: B785A6F1C43956195B242D286E36BB7E3A49541B CRC32: ED4E4021 更新日志2018/11/11 17:29:18 5.01–&gt;5.1 添加了“智能防误触”功能 完善了“readme.txt”文件 2018/11/9 17:48:47 5.0 –&gt; 5.01 修复了已知的BUG 2018/11/6 22:24:56 4.1–&gt;5.0 增加了“保存游戏进度”功能 “排行榜”选项卡下增加了“游戏时间”和“游戏日期”候选项 完善了游戏规则介绍 增强了视觉体验 … 更新日志走丢了… 2018/10/6 15:30:42 2.0–&gt;2.1 修复了已知的BUG 2018/10/6 14:56:46 1.5–&gt;2.0 添加了“排行榜”功能 2018/10/5 13:46:36 1.5–&gt;1.0 没有找到更新说明]]></content>
       <tags>
-        <tag>游戏</tag>
         <tag>原创</tag>
+        <tag>游戏</tag>
       </tags>
   </entry>
 </search>
