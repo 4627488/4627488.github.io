@@ -1,1890 +1,314 @@
 <!DOCTYPE html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<html class="theme-next mist" lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-    
-      
-    
-
-    
-  
-
-  
-    
-      
-    
-
-    
-  
-
-  
-
-  
-
-  
-    
-    
-    <link rel="stylesheet" href="//fonts.useso.com/css?family=Comic Neue:300,300italic,400,400italic,700,700italic|Comic Neue:300,300italic,400,400italic,700,700italic|Comic Neue:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext">
-  
-
-
-
-
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
-
-<link rel="stylesheet" href="/css/main.css?v=7.0.1">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.1">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.1">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.1">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=7.0.1" color="#222">
-
-
-
-
-
-
-
-<script id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Mist',
-    version: '7.0.1',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-  
-
-
-
-
-  <meta name="description" content="a blog by 4627488">
-<meta name="keywords" content="blog,4627488">
-<meta property="og:type" content="website">
-<meta property="og:title" content="4627488&#39;s blog">
-<meta property="og:url" content="http://hyq4627488.xyz/index.html">
-<meta property="og:site_name" content="4627488&#39;s blog">
-<meta property="og:description" content="a blog by 4627488">
-<meta property="og:locale" content="zh-CN">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="4627488&#39;s blog">
-<meta name="twitter:description" content="a blog by 4627488">
-
-
-
-
-
-
-  <link rel="canonical" href="http://hyq4627488.xyz/">
-
-
-
-<script id="page.configurations">
-  CONFIG.page = {
-    sidebar: "",
-  };
-</script>
-
-  <title>4627488's blog</title>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .motion-element,
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-title { opacity: initial; }
-
-  .use-motion .logo,
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caizi Jiangnan - Personal Homepage</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts for Inter and Fira Code -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Set Inter font as global font, and Fira Code for code-like elements */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0F172A; /* Deep blue background */
+            color: #E2E8F0; /* Light text */
+            line-height: 1.6;
+        }
+        /* Custom scrollbar styles */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2D3748;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4A5568;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6C7D96;
+        }
+
+        /* Material Design inspired animations */
+        @keyframes fadeInSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Apply global animation to main content container */
+        .animate-fadeInSlideUp {
+            animation: fadeInSlideUp 0.8s ease-out forwards;
+            animation-delay: 0.1s; /* Slight delay for background to load */
+            opacity: 0; /* Initially hidden */
+        }
+
+        /* Tech badge hover effect */
+        .tech-badge:hover {
+            transform: translateY(-5px) scale(1.05); /* Slightly lift and enlarge */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Deeper shadow */
+            transition: all 0.3s ease-out; /* Smooth transition */
+        }
+        /* Base transition for tech badges */
+        .tech-badge {
+            transition: all 0.3s ease-out;
+        }
+
+        /* Avatar hover effect */
+        .avatar-img:hover {
+            transform: scale(1.05); /* Slightly enlarge */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+            transition: all 0.3s ease-in-out; /* Smooth transition */
+        }
+        /* Base transition for avatar */
+        .avatar-img {
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Project card hover effect */
+        .project-card {
+            transition: all 0.3s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Social icon styling */
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #4A5568; /* Slightly lighter gray for buttons */
+            color: #E2E8F0;
+            font-size: 1.25rem; /* 20px */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.2s ease-in-out;
+        }
+        .social-icon:hover {
+            background-color: #6C7D96; /* Darker gray on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Typing animation cursor */
+        .typing-effect::after {
+            content: '|';
+            display: inline-block;
+            animation: blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes blink-caret {
+            from, to { border-right-color: transparent }
+            50% { border-right-color: currentColor }
+        }
+
+        /* Apply Fira Code font to the typing effect */
+        .typing-effect {
+            font-family: 'Fira Code', monospace;
+        }
+    </style>
 </head>
+<body class="p-6 sm:p-10 md:p-16 flex flex-col justify-center items-center min-h-screen relative">
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+    <div class="max-w-4xl w-full mx-auto bg-slate-800 rounded-3xl shadow-2xl p-8 sm:p-10 md:p-12 border border-slate-700 animate-fadeInSlideUp">
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">4627488's blog</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-    
-    
-  </div>
-
-  <div class="site-nav-toggle">
-    <button aria-label="切换导航栏">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-
-
-<nav class="site-nav">
-  
-    <ul id="menu" class="menu">
-      
-        
-        
-        
-          
-          <li class="menu-item menu-item-home menu-item-active">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-about">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-tags">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-categories">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-schedule">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
-
-  </li>
-
-      
-      
-    </ul>
-  
-
-  
-    
-
-  
-
-  
-</nav>
-
-
-
-  
-
-
-
-</div>
-    </header>
-
-    
-
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://hyq4627488.xyz/posts/4a17b156/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="4627488">
-      <meta itemprop="description" content="a blog by 4627488">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="4627488's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
+        <!-- Header Section -->
+        <div class="flex flex-col sm:flex-row items-center sm:items-start justify-between mb-10 pb-6 border-b border-slate-700">
+            <div class="text-center sm:text-left flex-grow">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-2">Caizi Jiangnan</h1>
                 
-                
-                <a href="/posts/4a17b156/" class="post-title-link" itemprop="url">Hello World</a>
-              
-            
-          </h2>
-        
+                <!-- Social Media Buttons -->
+                <div class="flex justify-center sm:justify-start gap-4 mt-6">
+                    <a href="https://github.com/4627488" target="_blank" aria-label="GitHub Profile" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://x.com/a4627488" target="_blank" aria-label="X (Twitter) Profile" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://codeforces.com/profile/4627488" target="_blank" aria-label="Codeforces Profile" class="social-icon">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
 
-        <div class="post-meta">
-          <span class="post-time">
+                <!-- Typing Animation Display -->
+                <div class="mt-6 text-center sm:text-left text-xl text-blue-400 font-medium typing-effect">
+                    <span id="typing-text"></span>
+                </div>
 
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-05 20:22:14" itemprop="dateCreated datePublished" datetime="2019-04-05T20:22:14+08:00">2019-04-05</time>
-            
-
-            
-          </span>
-
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/posts/4a17b156/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/posts/4a17b156/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-            <span id="/posts/4a17b156/" class="leancloud_visitors" data-flag-title="Hello World">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">264</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">1 分钟</span>
-              
             </div>
-          
-
-          
-
+            <img height="180em" src="https://avatars.githubusercontent.com/u/44314811"
+                 class="avatar-img w-36 h-36 sm:w-40 sm:h-40 md:w-44 md:h-44 rounded-full shadow-lg border-2 border-slate-600 object-cover mt-6 sm:mt-0 sm:ml-8"
+                 alt="Caizi Jiangnan's Avatar" />
         </div>
-      </header>
-    
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>Welcome to <a href="https://hyq4627488.xyz/">4627488 ‘s blog</a>!</p>
-<p>新博客的文件迁移将会陆续进行。</p>
-<p>Welcome to 4627488 ‘s blog!</p>
-<p>现在运行的是</p>
-<h3 id="4627488‘s-blog-v0-3-03"><a href="#4627488‘s-blog-v0-3-03" class="headerlink" title="4627488‘s blog v0.3.03"></a>4627488‘s blog v0.3.03</h3><p>在重构加入 live2d</p>
-<p>在重构加入评论</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/posts/4a17b156/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://hyq4627488.xyz/posts/20492847/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="4627488">
-      <meta itemprop="description" content="a blog by 4627488">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="4627488's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/posts/20492847/" class="post-title-link" itemprop="url">noip-mc 机房联机整合包[光影][forge]</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-03-29 21:28:42" itemprop="dateCreated datePublished" datetime="2019-03-29T21:28:42+08:00">2019-03-29</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-01 21:40:12" itemprop="dateModified" datetime="2019-04-01T21:40:12+08:00">2019-04-01</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/posts/20492847/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/posts/20492847/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-            <span id="/posts/20492847/" class="leancloud_visitors" data-flag-title="noip-mc 机房联机整合包[光影][forge]">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">480</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">1 分钟</span>
-              
-            </div>
-          
-
-          
-
+        <!-- About Me Section -->
+        <div class="mb-10">
+            <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-5">👨🏻‍💻 About Me</h2>
+            <ul class="list-disc list-inside text-slate-300 space-y-3 text-lg">
+                <li>🤔 Enjoy exploring new technologies and building software solutions.</li>
+                <li>🎓 <strong>Software Engineering @ Nanjing University of Aeronautics and Astronautics (NUAA)</strong></li>
+                <li>🌱 Always learning; currently focusing on <strong>algorithms</strong>.</li>
+                <li>⚙️ Actively engaging in <strong>CTF web challenges</strong>, always keen to explore web security vulnerabilities and build robust defenses.</li>
+                <li>✍️ I share thoughts & tutorials at <a href="https://blog.cafebabe.top/" target="_blank" class="text-blue-400 hover:text-blue-300 underline transition-colors duration-200">my blog</a>.</li>
+            </ul>
         </div>
-      </header>
-    
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+        <hr class="my-10 border-slate-700">
 
-      
-      
+        <!-- Tech Stack Section -->
+        <div class="mb-10">
+            <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-6 text-center">🛠️ Tech Stack</h2>
 
-      
-        
-          <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>一个我的世界整合包。带光影，带模组。近似纯净。</p>
-<p>3.29 v1.3更新 使用 HMCL-3.2.129</p>
-<p>封面图一张</p>
-<p><del>我居然蒟蒻到 mc 隐藏物品栏都不会</del></p>
-<p><img src="https://images-1258657204.cos.ap-chengdu.myqcloud.com/2019-03-29_21.39.16.png" alt="封面图"></p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/posts/20492847/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+            <div class="mb-8">
+                <h3 class="text-xl sm:text-2xl font-semibold text-white mb-4 text-center sm:text-left">Programming Languages</h3>
+                <div class="flex flex-wrap justify-center sm:justify-start gap-4 sm:gap-5">
+                    <!-- Rust badge -->
+                    <img src="https://img.shields.io/badge/-Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust Badge" class="tech-badge rounded-lg shadow-md" />
+                    <img src="https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python Badge" class="tech-badge rounded-lg shadow-md" />
+                    <img src="https://img.shields.io/badge/-Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java Badge" class="tech-badge rounded-lg shadow-md" />
+                    <img src="https://img.shields.io/badge/-C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++ Badge" class="tech-badge rounded-lg shadow-md" />
+                    <!-- TypeScript badge -->
+                    <img src="https://img.shields.io/badge/-TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Badge" class="tech-badge rounded-lg shadow-md" />
+                    <img src="https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js Badge" class="tech-badge rounded-lg shadow-md" />
+                    <img src="https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5 Badge" class="tech-badge rounded-lg shadow-md" />
+                </div>
             </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
 
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://hyq4627488.xyz/posts/117973b2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="4627488">
-      <meta itemprop="description" content="a blog by 4627488">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="4627488's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/posts/117973b2/" class="post-title-link" itemprop="url">元旦欢乐赛</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-12-09 22:10:43" itemprop="dateCreated datePublished" datetime="2018-12-09T22:10:43+08:00">2018-12-09</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-03-02 20:40:32" itemprop="dateModified" datetime="2019-03-02T20:40:32+08:00">2019-03-02</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/posts/117973b2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/posts/117973b2/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-            <span id="/posts/117973b2/" class="leancloud_visitors" data-flag-title="元旦欢乐赛">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">217</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">1 分钟</span>
-              
+            <div class="mb-8">
+                <h3 class="text-xl sm:text-2xl font-semibold text-white mb-4 text-center sm:text-left">Databases</h3>
+                <div class="flex flex-wrap justify-center sm:justify-start gap-4 sm:gap-5">
+                    <img src="https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL Badge" class="tech-badge rounded-lg shadow-md" />
+                </div>
             </div>
-          
 
-          
-
+            <div>
+                <h3 class="text-xl sm:text-2xl font-semibold text-white mb-4 text-center sm:text-left">Development Tools</h3>
+                <div class="flex flex-wrap justify-center sm:justify-start gap-4 sm:gap-5">
+                    <img src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git Badge" class="tech-badge rounded-lg shadow-md" />
+                    <img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge" class="tech-badge rounded-lg shadow-md" />
+                    <img src="https://img.shields.io/badge/-Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" alt="Markdown Badge" class="tech-badge rounded-lg shadow-md" />
+                    <img src="https://img.shields.io/badge/-VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code Badge" class="tech-badge rounded-lg shadow-md" />
+                    <img src="https://img.shields.io/badge/-IntelliJ%20IDEA-2C2255?style=for-the-badge&logo=intellijidea&logoColor=white" alt="IntelliJ IDEA Badge" class="tech-badge rounded-lg shadow-md" />
+                </div>
+            </div>
         </div>
-      </header>
-    
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+        <hr class="my-10 border-slate-700">
 
-      
-      
-
-      
-        
-          <p>洛谷的团队比赛，这个帖子是用来做宣传的。</p>
-<p>打个广告：<span class="exturl" data-url="aHR0cHM6Ly93d3cubHVvZ3Uub3JnL3RlYW0vc2hvdz90ZWFtaWQ9MTEzNTc=" title="https://www.luogu.org/team/show?teamid=11357">HUXKE 基金会(T11357)<i class="fa fa-external-link"></i></span></p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/posts/117973b2/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://hyq4627488.xyz/posts/f1464e8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="4627488">
-      <meta itemprop="description" content="a blog by 4627488">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="4627488's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/posts/f1464e8/" class="post-title-link" itemprop="url">图论0x00：一些名词</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-12-09 22:10:43" itemprop="dateCreated datePublished" datetime="2018-12-09T22:10:43+08:00">2018-12-09</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-03-02 20:40:32" itemprop="dateModified" datetime="2019-03-02T20:40:32+08:00">2019-03-02</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/posts/f1464e8/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/posts/f1464e8/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-            <span id="/posts/f1464e8/" class="leancloud_visitors" data-flag-title="图论0x00：一些名词">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">0</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">1 分钟</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              
-              
+        <!-- GitHub Stats Section -->
+        <div class="mb-10">
+            <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-6 text-center">📊 GitHub Stats</h2>
+            <p class="text-center mb-6 text-slate-400 text-lg">
+                <a href="https://github.com/4627488" target="_blank" class="text-blue-400 hover:text-blue-300 underline transition-colors duration-200">View my GitHub Profile</a>
             </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/posts/f1464e8/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                <!-- Original GitHub Stats image -->
+                <img class="w-full md:w-5/12 rounded-lg shadow-md border border-slate-700"
+                     src="https://github-readme-stats.vercel.app/api?username=4627488&theme=dark&show_icons=true&hide_border=true&count_private=true" alt="GitHub Stats" />
+                <!-- Top languages graph remains here -->
+                <img class="w-full md:w-5/12 rounded-lg shadow-md border border-slate-700" src="https://github-readme-stats.vercel.app/api/top-langs/?username=4627488&theme=dark&layout=compact&hide_border=true" alt="Top Languages" />
             </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
+        </div>
 
-    
+        <hr class="my-10 border-slate-700">
 
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://hyq4627488.xyz/posts/dfb4c6d6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="4627488">
-      <meta itemprop="description" content="a blog by 4627488">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="4627488's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/posts/dfb4c6d6/" class="post-title-link" itemprop="url">Cola 's 猜数</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-11-04 17:49:14" itemprop="dateCreated datePublished" datetime="2018-11-04T17:49:14+08:00">2018-11-04</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-03-02 20:40:32" itemprop="dateModified" datetime="2019-03-02T20:40:32+08:00">2019-03-02</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/posts/dfb4c6d6/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/posts/dfb4c6d6/" itemprop="commentCount"></span>
+        <!-- Projects Section (Restored card-based, moved to bottom) -->
+        <div class="mb-10">
+            <h2 class="text-2xl sm:text-3xl font-semibold text-white mb-5 text-center">🚀 Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Blog Project Card -->
+                <a href="https://blog.cafebabe.top/" target="_blank" class="project-card block p-6 bg-slate-700 rounded-xl shadow-lg hover:bg-slate-600">
+                    <h3 class="text-xl font-bold text-white mb-2">My Blog 📝</h3>
+                    <p class="text-slate-300 text-base">Where I share my thoughts, tutorials, and insights on various tech topics and personal learnings.</p>
                 </a>
-              </span>
-            
-          
-
-          
-          
-            <span id="/posts/dfb4c6d6/" class="leancloud_visitors" data-flag-title="Cola 's 猜数">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">747</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">1 分钟</span>
-              
+                <!-- Codeforces Tracker Project Card -->
+                <a href="https://ccb.cafebabe.top/" target="_blank" class="project-card block p-6 bg-slate-700 rounded-xl shadow-lg hover:bg-slate-600">
+                    <h3 class="text-xl font-bold text-white mb-2">Codeforces Tracker 📈</h3>
+                    <p class="text-slate-300 text-base">A personal project to track Codeforces contest performance and visualize progress. Built for competitive programming enthusiasts.</p>
+                </a>
             </div>
-          
-
-          
-
         </div>
-      </header>
-    
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+        <hr class="my-10 border-slate-700">
 
-      
-      
-
-      
-        
-          <p>一个纯 C++ 编译的文字游戏，作者 Cola，现已更新到 v5.1。<br>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/posts/dfb4c6d6/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </p></div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-
-
-          </div>
-          
-
+        <!-- Footer Quote -->
+        <div class="text-center text-slate-400 italic text-lg mt-8">
+            <p>🫧 *Striving for excellence in code and beyond!*</p>
         </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">4627488</p>
-              <p class="site-description motion-element" itemprop="description">a blog by 4627488</p>
-          </div>
-
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">5</span>
-                    <span class="site-state-item-name">日志</span>
-                  </a>
-                </div>
-              
-
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">3</span>
-                    <span class="site-state-item-name">标签</span>
-                  </a>
-                </div>
-              
-            </nav>
-          
-
-          
-
-          
-            <div class="links-of-author motion-element">
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzQ2Mjc0ODg=" title="GitHub &rarr; https://github.com/4627488"><i class="fa fa-fw fa-github"></i>GitHub</span>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <span class="exturl" data-url="bWFpbHRvOmh1YW5neXVucWluZ3NAb3V0bG9vay5jb20=" title="E-Mail &rarr; mailto:huangyunqings@outlook.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</span>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <span class="exturl" data-url="aHR0cHM6Ly93d3cubHVvZ3Uub3JnL3NwYWNlL3Nob3c/dWlkPTk5MjMz" title="Luogu &rarr; https://www.luogu.org/space/show?uid=99233"><i class="fa fa-fw fa-luogu"></i>Luogu</span>
-                </span>
-              
-            </div>
-          
-
-          
-
-          
-          
-
-          
-            
-          
-          
-
-        </div>
-      </div>
-
-      
-
-      
 
     </div>
-  </aside>
-  
 
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love" id="animate">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">4627488</span>
-
-  
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
-    </span>
-    
-    <span title="站点总字数">2k</span>
-  
-
-  
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    
-    <span title="站点阅读时长">2 分钟</span>
-  
-</div>
-
-
-  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> 强力驱动 v3.8.0</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Mist</span> v7.0.1</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-    
-
-    
-  </div>
-
-  
-
-<script>
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-    
-    
-  
-  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <script src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-
-  
-
-
-  <script src="/js/src/utils.js?v=7.0.1"></script>
-
-  <script src="/js/src/motion.js?v=7.0.1"></script>
-
-
-
-  
-  
-
-
-  <script src="/js/src/schemes/muse.js?v=7.0.1"></script>
-
-
-
-
-  
-
-  
-
-
-  <script src="/js/src/bootstrap.js?v=7.0.1"></script>
-
-
-  
-  
-  
-
-<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
-
-
-
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-
-<script>
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail,link';
-  guest = guest.split(',').filter(function(item) {
-    return GUEST.indexOf(item) > -1;
-  });
-  new Valine({
-    el: '#comments',
-    verify: false,
-    notify: true,
-    appId: '5ATeBSc7MCYHBondyarVJ2mk-gzGzoHsz',
-    appKey: 'LKMfpiDgVcMb38aoTNKECgEc',
-    placeholder: 'Just go go',
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: false
-  });
-</script>
-
-
-
-
-
-  
-
-
-
-
-  
-  
-  <script>
-    
-    function showTime(Counter) {
-      var entries = [];
-      var $visitors = $('.leancloud_visitors');
-
-      $visitors.each(function() {
-        entries.push( $(this).attr('id').trim() );
-      });
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { '$in': entries } }) })
-        .done(function({ results }) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.url;
-            var time = item.time;
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for (var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if (countSpan.text() == '') {
-              countSpan.text(0);
+    <!-- ICP Beian at the very bottom center, outside the main card -->
+    <div class="w-full text-center text-slate-500 text-sm mt-8 mb-4">
+        <a href="https://beian.miit.gov.cn/" target="_blank" class="hover:underline">黑ICP备2024033441号-1</a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const typingTextElement = document.getElementById('typing-text');
+            const prefixes = ["I am a "]; // Common prefix
+            const suffixes = ["ACMer", "CTFer", "coder"]; // Changing suffixes
+            let suffixIndex = 0;
+            let charIndex = suffixes[suffixIndex].length; // Start with length of current suffix
+            let isDeleting = false;
+            const typingSpeed = 100; // Milliseconds per character
+            const deletingSpeed = 50; // Milliseconds per character for deletion
+            const pauseBeforeDelete = 1500; // Pause after typing, before deleting
+            const pauseBeforeType = 500; // Pause after deleting, before typing next suffix
+
+            function typeWriter() {
+                const currentPrefix = prefixes[0]; // Assuming only one prefix for now
+                const currentSuffix = suffixes[suffixIndex];
+                
+                if (isDeleting) {
+                    // Deleting suffix
+                    typingTextElement.textContent = currentPrefix + currentSuffix.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    // Typing suffix
+                    typingTextElement.textContent = currentPrefix + currentSuffix.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+
+                let typeSpeed = isDeleting ? deletingSpeed : typingSpeed;
+
+                if (!isDeleting && charIndex === currentSuffix.length) {
+                    // Finished typing suffix, start deleting after a pause
+                    typeSpeed = pauseBeforeDelete;
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    // Finished deleting suffix, move to next suffix after a pause
+                    isDeleting = false;
+                    suffixIndex = (suffixIndex + 1) % suffixes.length;
+                    typeSpeed = pauseBeforeType;
+                }
+
+                setTimeout(typeWriter, typeSpeed);
             }
-          }
-        })
-        .fail(function ({ responseJSON }) {
-          console.log('LeanCloud Counter Error: ' + responseJSON.code + ' ' + responseJSON.error);
+
+            // Initialize with the first phrase before starting the animation
+            typingTextElement.textContent = prefixes[0] + suffixes[0];
+            setTimeout(() => {
+                isDeleting = true; // Start by deleting the first suffix
+                typeWriter();
+            }, pauseBeforeDelete); // Pause before starting the deletion loop
+
         });
-    }
-    
-
-    $(function() {
-      $.get('https://app-router.leancloud.cn/2/route?appId=' + '')
-        .done(function({ api_server }) {
-          var Counter = function(method, url, data) {
-            return $.ajax({
-              method: method,
-              url: 'https://' + api_server + '/1.1' + url,
-              headers: {
-                'X-LC-Id': '',
-                'X-LC-Key': '',
-                'Content-Type': 'application/json',
-              },
-              data: data
-            });
-          };
-          
-            if ($('.post-title-link').length >= 1) {
-              showTime(Counter);
-            }
-          
-        });
-    });
-  </script>
-
-
-
-  
-
-  
-
-  
-  
-
-  
-  
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  
-
-  
-
-
-  
-  <script>
-    (function(){
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-    })();
-  </script>
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  <script src="/js/src/exturl.js?v=7.0.1"></script>
-
-
-  
-
-  
-
-<script src="/live2dw/lib/L2Dwidget.min.js?bd2294fafea3389ee458f1d9be5a2157"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
+    </script>
+</body>
 </html>
